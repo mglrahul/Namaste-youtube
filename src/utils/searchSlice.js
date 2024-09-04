@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const searchSlice = new createSlice({
+const searchSlice = createSlice({
   name: "search",
   initialState: {
     cache: {}
