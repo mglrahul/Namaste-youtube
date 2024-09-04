@@ -6,6 +6,9 @@ import Head from "./components/Head";
 import store from "./utils/store";
 import WatchPage from "./components/WatchPage";
 import MainContainer from "./components/MainContainer";
+import Demo from "./components/Demo";
+import ConsoleTime from "./components/ConsoleTime";
+import Demo2 from "./components/Demo2";
 
 const appRouter = createBrowserRouter([
   {
@@ -19,6 +22,19 @@ const appRouter = createBrowserRouter([
       {
         path: "watch",
         element: <WatchPage />,
+      },
+      {
+        path: "demo",
+        element: (
+          <>
+            <Demo />
+            <Demo2 />
+          </>
+        ),
+      },
+      {
+        path: "console",
+        element: <ConsoleTime />,
       },
     ],
   },
